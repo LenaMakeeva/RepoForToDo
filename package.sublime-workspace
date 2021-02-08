@@ -1,0 +1,613 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"car",
+				"cardGameOver"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"card",
+				"cardBug"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"a",
+				"add"
+			],
+			[
+				"pi",
+				"pictureOfCard"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"pict",
+				"pictureOfGameOver"
+			],
+			[
+				"desk",
+				"desk_card"
+			],
+			[
+				"rotate",
+				"rotateZ()\ttransform"
+			],
+			[
+				"tra",
+				"translateY()\ttransform"
+			],
+			[
+				"p",
+				"pictureOfCard"
+			],
+			[
+				"ro",
+				"rotateY()\ttransform"
+			],
+			[
+				"mo",
+				"moveCard"
+			],
+			[
+				"de",
+				"deskHard"
+			],
+			[
+				"des",
+				"deskMedium"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"c",
+				"contains"
+			],
+			[
+				"max-",
+				"max-height\tproperty"
+			],
+			[
+				"padding-",
+				"padding-left\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"margin-",
+				"margin-right\tproperty"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"n",
+				"now"
+			],
+			[
+				"get",
+				"getInfo"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"f",
+				"fcalkK"
+			],
+			[
+				"u",
+				"urlSplit"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"ba",
+				"background-size\tproperty"
+			],
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"margi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"fle",
+				"flex\tdisplay"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"i",
+				"inline\tdisplay"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"bac",
+				"background\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"sp",
+				"space-between\tjustify-content"
+			],
+			[
+				"backgr",
+				"background-attachment\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"v",
+				"visible\tvisibility"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"s",
+				"space-between\tjustify-content"
+			],
+			[
+				"se",
+				"align-self\tproperty"
+			],
+			[
+				"j",
+				"justify-content\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"flex-",
+				"flex-direction\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"flex",
+				"flex-end\tjustify-content"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"border-",
+				"border-radius\tproperty"
+			],
+			[
+				"fl",
+				"flex-end\tjustify-content"
+			],
+			[
+				"spac",
+				"space-between\tjustify-content"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"bor",
+				"border-right\tproperty"
+			],
+			[
+				"border",
+				"border-top\tproperty"
+			],
+			[
+				"paddin",
+				"padding-bottom\tproperty"
+			],
+			[
+				"Rec",
+				"Rectangle 3.5.png\tw:148 h:148"
+			],
+			[
+				"text-",
+				"text-decoration\tproperty"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"op",
+				"opacity\tproperty"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"top",
+				"topOfWindow"
+			],
+			[
+				"ani",
+				"animate.css"
+			],
+			[
+				"bl",
+				"block\tdisplay"
+			],
+			[
+				"ta",
+				"ta-c\ttext-align: center;"
+			],
+			[
+				"pt",
+				"padding-top\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"backro",
+				"background\tproperty"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"in",
+				"inline-flex\tdisplay"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"mt",
+				"margin-top\tproperty"
+			],
+			[
+				"pb",
+				"padding-bottom\tproperty"
+			],
+			[
+				"td",
+				"text-decoration\tproperty"
+			],
+			[
+				"IN",
+				"inline-flex\tdisplay"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"mb",
+				"margin-bottom\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/User/Documents/Final_Card_Game/css/fonts.css",
+		"/C/Users/User/Documents/Final_Card_Game/css/style.css",
+		"/C/Users/User/Documents/Final_Card_Game/js/script.js",
+		"/C/Users/User/Documents/Final_Card_Game/package.json",
+		"/C/Users/User/Documents/FinalCardGame/index.html",
+		"/C/Users/User/Documents/FinalCardGame/js/script.js",
+		"/C/Users/User/Documents/FinalCardGame/css/style.css",
+		"/C/Users/User/Documents/FinalCardGame/css/fonts.css",
+		"/C/Users/User/Documents/Final-Axion-cite/css/style.css",
+		"/C/Users/User/Documents/FinalGame/now.json",
+		"/C/Users/User/Documents/FinalCardGame/now.json",
+		"/C/Users/User/Documents/FinalGame/js/script.js",
+		"/C/Users/User/Documents/FinalGame/css/style.css",
+		"/C/Users/User/Documents/FinalGame/css/fonts.css",
+		"/C/Users/User/Documents/FinalGame/index.html",
+		"/C/Users/User/Documents/Final-Axion-cite/index.html",
+		"/C/Users/User/Documents/JavaScriptL6/script.js",
+		"/C/Users/User/Documents/JavaScriptL6/index.html",
+		"/C/Users/User/Documents/Final-Axion-cite/css/fonts.css",
+		"/C/Users/User/Documents/FinalGame/css/styles.css",
+		"/C/Users/User/Documents/Fetch_Request/css/styles.css",
+		"/C/Users/User/Documents/Fetch_Request/script.js",
+		"/C/Users/User/Documents/Fetch_Request/index.html",
+		"/C/Users/User/Documents/Fetch_Request/styles.css",
+		"/C/Users/User/Desktop/Fetch_Request/index.html",
+		"/C/Users/User/Desktop/Лаба/index.html",
+		"/C/Users/User/Desktop/Лаба/script.js",
+		"/C/Users/User/Desktop/Лаба/code.java",
+		"/C/Users/User/Desktop/Fetch_Request/script.js",
+		"/C/Users/User/Desktop/Веб-верстальщик_/ДЗ 4/css/main.css",
+		"/C/Users/User/Documents/Adaptive_Lesson17/style.css",
+		"/C/Users/User/Documents/Adaptive_Lesson17/index.html",
+		"/C/Users/User/Desktop/Веб-верстальщик_/ДЗ 4/index.html",
+		"/C/Users/User/Desktop/Веб-верстальщик_/index.html",
+		"/C/Users/User/Desktop/Новая папка/style.css",
+		"/C/Users/User/Desktop/Новая папка/index.html",
+		"/C/Users/User/Documents/Structure-Tegs/index.html",
+		"/C/Users/User/Documents/Structure-Tegs/style.css",
+		"/C/Users/User/Desktop/Тултип/main.css",
+		"/C/Users/User/Desktop/Тултип/index.html",
+		"/C/Users/User/Documents/HTML-CSS-Makeeva/index.html",
+		"/C/Users/User/Documents/Structure-Tegs/now.json",
+		"/C/Users/User/Documents/HTML-by-Makeeva/index.html",
+		"/C/Users/User/Documents/FirstWebHeroProject/index.html",
+		"/C/Users/User/Desktop/ДЗ 4/js/main.js",
+		"/C/Users/User/Desktop/ДЗ 4/css/main.css",
+		"/C/Users/User/Desktop/ДЗ 4/index.html",
+		"/C/Users/User/Desktop/ДЗ 4/css/animate.css",
+		"/C/Users/User/Desktop/Урок про адаптивность/css/main.css",
+		"/C/Users/User/Desktop/Урок про адаптивность/index.html",
+		"/C/Users/User/Desktop/ДЗ 3/index.html",
+		"/C/Users/User/Desktop/ДЗ 3/css/main.css",
+		"/C/Users/User/Desktop/исправленная версия ДЗ 3/css/main.css",
+		"/C/Users/User/Desktop/исправленная версия ДЗ 3/index.html",
+		"/C/Users/User/Desktop/Веб-верстальщик_/css/main.css",
+		"/C/Users/User/Desktop/ilearn/css/main.css",
+		"/C/Users/User/Desktop/ilearn/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
