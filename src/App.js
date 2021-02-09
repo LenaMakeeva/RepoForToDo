@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { count, length } from './numbers';
 
 const number = 46;
 const checkTrue = true;
@@ -46,6 +47,10 @@ class App extends Component {
             {false}
             {null}
             {undefined}
+          </p>
+
+          <p>
+            count * length ={count*length}
           </p>
 
           <a
