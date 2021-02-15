@@ -1,7 +1,11 @@
 .item {
 	color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .done {
 	color: #c4c4c4;
+	text-decoration: line-through;
 }
