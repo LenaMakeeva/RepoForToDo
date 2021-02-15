@@ -9,13 +9,16 @@ const todoItem = 'Redux';
 const App = () => {
 	const items = [
 		{
-			value: 'Redux'
+			value: 'Redux',
+			isDone: true
 		},
 		{
-			value: 'Immutable'
+			value: 'Immutable',
+			isDone: false
 		},
 		{
-			value: 'Additional'
+			value: 'Additional',
+			isDone: true
 		}
   	];
 
