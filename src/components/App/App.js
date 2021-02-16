@@ -9,29 +9,31 @@ import CardContent from '@material-ui/core/CardContent';
 const todoItem = 'Redux';
 
 class App extends React.Component {
-	render() {
-		const items = [
-		{
-			value: 'Создать приложение',
-			isDone: true
-		},
-		{
-			value: 'Сделать структуру приложения',
-			isDone: true
-		},
-		{
-			value: 'Добавить стили',
-			isDone: false
-		}
-		];
+	state = {
+		items : [
+			{
+				value: 'Создать приложение',
+				isDone: true
+			},
+			{
+				value: 'Сделать структуру приложения',
+				isDone: true
+			},
+			{
+				value: 'Добавить стили',
+				isDone: false
+			}
+		]
+	};
 
+	render() {
 		return ( 
 			<div className={styles.wrap}>
 				<Card variant="outlined">
 		        	<CardContent>
 						<h1 className={styles.title}>Список задач</h1>
 						<InputItem />
-						<ItemList items = {items} />
+						<ItemList items = {this.state.items} />
 						<Footer count = {2} />
 					</CardContent>
 				</Card>
