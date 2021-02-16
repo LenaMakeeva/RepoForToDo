@@ -8,8 +8,9 @@ import CardContent from '@material-ui/core/CardContent';
 
 const todoItem = 'Redux';
 
-const App = () => {
-	const items = [
+class App extends React.Component {
+	render() {
+		const items = [
 		{
 			value: 'Создать приложение',
 			isDone: true
@@ -22,20 +23,21 @@ const App = () => {
 			value: 'Добавить стили',
 			isDone: false
 		}
-  	];
+		];
 
-	return ( 
-		<div className={styles.wrap}>
-			<Card variant="outlined">
-	        	<CardContent>
-					<h1 className={styles.title}>Список задач</h1>
-					<InputItem />
-					<ItemList items = {items} />
-					<Footer count = {2} />
-				</CardContent>
-			</Card>
-		</div>
+		return ( 
+			<div className={styles.wrap}>
+				<Card variant="outlined">
+		        	<CardContent>
+						<h1 className={styles.title}>Список задач</h1>
+						<InputItem />
+						<ItemList items = {items} />
+						<Footer count = {2} />
+					</CardContent>
+				</Card>
+			</div>
 		);
+	}	
 }
 
 export default App;
