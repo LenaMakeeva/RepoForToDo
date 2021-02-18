@@ -7,7 +7,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 import styles from './Item.module.css';
 
-const Item = ({ value, isDone, onClickDone }) => (<div className = {
+const Item = ({ value, isDone, onClickDone, id }) => (<div className = {
   classnames({
      [styles.item]: true,
      [styles.done]: isDone
@@ -18,7 +18,7 @@ const Item = ({ value, isDone, onClickDone }) => (<div className = {
 	        checked={isDone}
 	        color="default"
 	        inputProps={{ 'aria-label': 'checkbox with default color' }}
-	        onClick={() => onClickDone(isDone)}
+	        onClick={() => onClickDone(id)}
 	    />
 
 	    {value}
