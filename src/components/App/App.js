@@ -13,17 +13,40 @@ class App extends React.Component {
 		items : [
 			{
 				value: 'Создать приложение',
-				isDone: true
+				isDone: true,
+				id: 1
 			},
 			{
 				value: 'Сделать структуру приложения',
-				isDone: true
+				isDone: true,
+				id: 2
 			},
 			{
 				value: 'Добавить стили',
-				isDone: false
+				isDone: false,
+				id: 3
 			}
 		]
+	};
+
+	constructor(props) {
+		super(props);
+
+		this.onClickDone=this.onClickDone.bind(this);
+	}
+
+	onClickDone = id => {
+		const newItemList = this.state.items.map(item => { //проверка изменившихся элементов
+			const newItem = { ...item }; //деструктуризация ItemList
+
+			if (item.id === id) { //проверка был нажат элемент или нет
+				newItem.isDone = !item.isDone; //изменение isDone на противоположный 
+			}
+
+			return newItem;
+		});
+
+		this.setState({ items: newItemList });
 	};
 
 	render() {
@@ -33,7 +56,7 @@ class App extends React.Component {
 		        	<CardContent>
 						<h1 className={styles.title}>Список задач</h1>
 						<InputItem />
-						<ItemList items = {this.state.items} />
+						<ItemList items={this.state.items} onClickDone={this.onClickDone} />
 						<Footer count = {2} />
 					</CardContent>
 				</Card>
