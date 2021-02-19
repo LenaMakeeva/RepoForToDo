@@ -7,7 +7,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 import styles from './Item.module.css';
 
-const Item = ({ value, isDone, onClickDone, id }) => (<div className = {
+const Item = ({ value, isDone, onClickDone, id, onClickDelete}) => (<div className = {
   classnames({
      [styles.item]: true,
      [styles.done]: isDone
@@ -26,7 +26,9 @@ const Item = ({ value, isDone, onClickDone, id }) => (<div className = {
 
     <Tooltip title="Delete">
 		<IconButton aria-label="delete">
-    		<DeleteIcon />
+    		<DeleteIcon 
+    			onClick={() => onClickDelete(id)}
+    		/>
   		</IconButton>
 	</Tooltip>
 

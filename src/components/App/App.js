@@ -26,7 +26,8 @@ class App extends React.Component {
 				isDone: false,
 				id: 3
 			}
-		]
+		],
+		count : 3
 	};
 
 	constructor(props) {
@@ -49,15 +50,33 @@ class App extends React.Component {
 		this.setState({ items: newItemList });
 	};
 
+	onClickDelete = id => {
+		const newItemList = this.state.items.filter(item => item.id !== id);
+
+		this.setState({ items: newItemList });
+	};
+
+	onClickAdd = value => this.setState(state => ({ //создаем новый state
+		items: [ // создаем новый массив items
+			...state.items, //переложение всех существующих item с помощью деструктуризачии, чтобы получился новый
+			{
+				value,
+				isDone: false,
+				id: state.count + 1
+			}
+		],
+		count: state.count + 1
+	}));
+
 	render() {
 		return ( 
 			<div className={styles.wrap}>
 				<Card variant="outlined">
 		        	<CardContent>
 						<h1 className={styles.title}>Список задач</h1>
-						<InputItem />
-						<ItemList items={this.state.items} onClickDone={this.onClickDone} />
-						<Footer count = {2} />
+						<InputItem onClickAdd={this.onClickAdd}/>
+						<ItemList items={this.state.items} onClickDone={this.onClickDone} onClickDelete={this.onClickDelete}/>
+						<Footer count = {this.state.count} />
 					</CardContent>
 				</Card>
 			</div>
