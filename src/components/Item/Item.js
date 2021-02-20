@@ -34,4 +34,14 @@ const Item = ({ value, isDone, onClickDone, id, onClickDelete}) => (<div classNa
 
 </div>);
 
+Item.defaultProps = {
+	items : [
+		{
+			value: 'Задание №1',
+			isDone: true,
+			id: 1
+		}
+	]
+}
+
 export default Item;

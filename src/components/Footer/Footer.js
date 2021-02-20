@@ -5,4 +5,8 @@ const Footer = ({ count }) => (<footer className={styles.footer}>
 	<div>Вот столько дел осталось сделать: <span className={styles.count}>{count}</span></div>
 </footer>);
 
+Footer.defaultProps = {
+	count: 0
+};
+
 export default Footer;
