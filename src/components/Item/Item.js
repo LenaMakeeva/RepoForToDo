@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Checkbox from '@material-ui/core/Checkbox';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -34,14 +35,13 @@ const Item = ({ value, isDone, onClickDone, id, onClickDelete}) => (<div classNa
 
 </div>);
 
-Item.defaultProps = {
-	items : [
-		{
-			value: 'Задание №1',
-			isDone: true,
-			id: 1
-		}
-	]
+
+Item.propTypes = {
+	value: PropTypes.string.isRequired,
+	isDone: PropTypes.bool.isRequired,
+	onClickDone: PropTypes.func.isRequired,
+	id: PropTypes.number.isRequired,
+	onClickDelete: PropTypes.func.isRequired
 }
 
 export default Item;
