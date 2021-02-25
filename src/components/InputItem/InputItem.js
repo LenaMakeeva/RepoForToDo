@@ -27,7 +27,12 @@ class InputItem extends React.Component {
 				error: true
 			});
 		}		
-	}
+	};
+
+	static getDerivedStateFromProps(props, state) {
+        console.log('getDerivedStateFromProps');
+        return null;
+    }
 
 	render() {
 
