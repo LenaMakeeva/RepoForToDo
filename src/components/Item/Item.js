@@ -8,33 +8,59 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 import styles from './Item.module.css';
 
-const Item = ({ value, isDone, onClickDone, id, onClickDelete}) => (<div className = {
-  classnames({
-     [styles.item]: true,
-     [styles.done]: isDone
-  })
-}>	
-	<span> 
-		<Checkbox
-	        checked={isDone}
-	        color="default"
-	        inputProps={{ 'aria-label': 'checkbox with default color' }}
-	        onClick={() => onClickDone(id)}
-	    />
+class Item extends React.Component {
 
-	    {value}
-    </span>
+	componentDidMount() {
+		this.timerID = setInterval(() => console.log('interval'), 1000);		
+	};
 
-    <Tooltip title="Delete">
-		<IconButton aria-label="delete">
-    		<DeleteIcon 
-    			onClick={() => onClickDelete(id)}
-    		/>
-  		</IconButton>
-	</Tooltip>
+	shouldComponentUpdate(){
+    	console.log("shouldComponentUpdate()");
+        return true;
+    };
 
-</div>);
+     getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("getSnapshotBeforeUpdate()");
+        return null;
+    };
 
+	componentDidUpdate() {
+		console.log('componentDidUpdate')
+	};
+
+	componentWillUnmount() {
+		clearInterval(this.timerID)
+	};
+ 
+	render() {
+		const { value, isDone, onClickDone, id, onClickDelete} = this.props;
+
+		return (<div className = {
+			 	classnames({
+				    [styles.item]: true,
+				    [styles.done]: isDone
+		  		})
+			}>	
+			<span> 
+				<Checkbox
+			        checked={isDone}
+			        color="default"
+			        inputProps={{ 'aria-label': 'checkbox with default color' }}
+			        onClick={() => onClickDone(id)}
+			    />
+
+			    {value}
+		    </span>
+
+		    <Tooltip title="Delete">
+				<IconButton aria-label="delete" onClick={() => onClickDelete(id)}>
+		    		<DeleteIcon/>
+		  		</IconButton>
+			</Tooltip>
+
+		</div>);
+	}
+}
 
 Item.propTypes = {
 	value: PropTypes.string.isRequired,
