@@ -1,88 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import InputItem from '../InputItem/InputItem';
-import ItemList from '../ItemList/ItemList';
-import Footer from '../Footer/Footer';
 import styles from './App.module.css';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Todo from '../Todo/Todo';
+import About from '../About/About';
+import Contacts from '../Contacts/Contacts';
+import MenuList from '@material-ui/core/MenuList';
 
-const todoItem = 'Redux';
-
-class App extends React.Component {
-	state = {
-		items : [
-			{
-				value: 'Создать приложение',
-				isDone: true,
-				id: 1
-			},
-			{
-				value: 'Сделать структуру приложения',
-				isDone: true,
-				id: 2
-			},
-			{
-				value: 'Добавить стили',
-				isDone: false,
-				id: 3
-			}
-		],
-		count : 3
-	};
-
-	constructor(props) {
-		super(props);
-
-		this.onClickDone=this.onClickDone.bind(this);
-	}
-
-	onClickDone = id => {
-		const newItemList = this.state.items.map(item => { //проверка изменившихся элементов
-			const newItem = { ...item }; //деструктуризация ItemList
-
-			if (item.id === id) { //проверка был нажат элемент или нет
-				newItem.isDone = !item.isDone; //изменение isDone на противоположный 
-			}
-
-			return newItem;
-		});
-
-		this.setState({ items: newItemList });
-	};
-
-	onClickDelete = id => {
-		const newItemList = this.state.items.filter(item => item.id !== id);
-
-		this.setState({ items: newItemList });
-	};
-
-	onClickAdd = value => this.setState(state => ({ //создаем новый state
-		items: [ // создаем новый массив items
-			...state.items, //переложение всех существующих item с помощью деструктуризачии, чтобы получился новый
-			{
-				value,
-				isDone: false,
-				id: state.count + 1
-			}
-		],
-		count: state.count + 1
-	}));
-
-	render() {
-		return ( 
-			<div className={styles.wrap}>
-				<Card variant="outlined">
-		        	<CardContent>
-						<h1 className={styles.title}>Список задач</h1>
-						<InputItem onClickAdd={this.onClickAdd}/>
-						<ItemList items={this.state.items} onClickDone={this.onClickDone} onClickDelete={this.onClickDelete}/>
-						<Footer count = {this.state.count} />
-					</CardContent>
-				</Card>
-			</div>
-		);
-	}	
-}
+const App = () => 
+	(<Router> 
+		<div className={styles.wrap}>
+			<Card className={styles.sidebar}>
+				<MenuList>
+					<Link to='/' className={styles.link}><MenuItem>Обо мне</MenuItem></Link>
+					<Link to='/Todo' className={styles.link}><MenuItem>Дела</MenuItem></Link>
+					<Link to='/Contacts' className={styles.link}><MenuItem>Контакты</MenuItem></Link>
+	      		</MenuList>
+	      	</Card>
+			<Card variant="outlined" className={styles.content}>
+	    		<CardContent>
+	    			<Route path='/' exact component={About} />
+	    			<Route path='/Todo' exact component={Todo} />
+	    			<Route path='/Contacts' exact component={Contacts} />
+				</CardContent>
+			</Card>
+		</div>
+	</Router>);
 
 export default App;
