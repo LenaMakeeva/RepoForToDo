@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import InputItem from '../InputItem/InputItem';
 import ItemList from '../ItemList/ItemList';
@@ -9,8 +9,10 @@ import CardContent from '@material-ui/core/CardContent';
 
 const todoItem = 'Redux';
 
-class App extends React.Component {
-	state = {
+
+
+const App = () => {
+	const initialState = {
 		items : [
 			{
 				value: 'Создать приложение',
@@ -31,14 +33,27 @@ class App extends React.Component {
 		count : 3
 	};
 
-	constructor(props) {
-		super(props);
+	const [items,setItems] = useState(initialState.items);
+	const [count,setCount] = useState(initialState.count);
 
-		this.onClickDone=this.onClickDone.bind(this);
-	}
+	useEffect(() => {
+		console.log('componentDidMount');
+	}, []);
 
-	onClickDone = id => {
-		const newItemList = this.state.items.map(item => { //проверка изменившихся элементов
+	useEffect (() => {
+		console.log('componentDidUpdate');
+	});
+
+	// constructor(props) {
+	// 	super(props);
+
+	// 	onClickDone=this.onClickDone.bind(this);
+	// }
+
+
+
+	const onClickDone = id => {
+		const newItemList = items.map(item => { //проверка изменившихся элементов
 			const newItem = { ...item }; //деструктуризация ItemList
 
 			if (item.id === id) { //проверка был нажат элемент или нет
@@ -48,41 +63,41 @@ class App extends React.Component {
 			return newItem;
 		});
 
-		this.setState({ items: newItemList });
+		setItems(newItemList);
 	};
 
-	onClickDelete = id => {
-		const newItemList = this.state.items.filter(item => item.id !== id);
+	const onClickDelete = id => {
+		const newItemList = items.filter(item => item.id !== id);
 
-		this.setState({ items: newItemList });
+		setItems(newItemList);
+		setCount((count) => count -1);
 	};
 
-	onClickAdd = value => this.setState(state => ({ //создаем новый state
-		items: [ // создаем новый массив items
-			...state.items, //переложение всех существующих item с помощью деструктуризачии, чтобы получился новый
+	const onClickAdd = value => { //создаем новый state
+		const newItems = [ // создаем новый массив items
+			...items, //переложение всех существующих item с помощью деструктуризачии, чтобы получился новый
 			{
 				value,
 				isDone: false,
-				id: state.count + 1
+				id: count + 1
 			}
-		],
-		count: state.count + 1
-	}));
+		];
+		setItems(newItems);
+		setCount((count) => count + 1);
+	};
 
-	render() {
-		return ( 
-			<div className={styles.wrap}>
-				<Card variant="outlined">
-		        	<CardContent>
-						<h1 className={styles.title}>Список задач</h1>
-						<InputItem onClickAdd={this.onClickAdd}/>
-						<ItemList items={this.state.items} onClickDone={this.onClickDone} onClickDelete={this.onClickDelete}/>
-						<Footer count = {this.state.count} />
-					</CardContent>
-				</Card>
-			</div>
-		);
-	}	
+	return ( 
+		<div className={styles.wrap}>
+			<Card variant="outlined">
+	    		<CardContent>
+					<h1 className={styles.title}>Список задач</h1>
+					<InputItem onClickAdd={onClickAdd}/>
+					<ItemList items={items} onClickDone={onClickDone} onClickDelete={onClickDelete}/>
+					<Footer count = {count} />
+				</CardContent>
+			</Card>
+		</div>
+	);
 }
 
 export default App;
