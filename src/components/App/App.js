@@ -9,8 +9,6 @@ import CardContent from '@material-ui/core/CardContent';
 
 const todoItem = 'Redux';
 
-
-
 const App = () => {
 	const initialState = {
 		items : [
@@ -43,14 +41,6 @@ const App = () => {
 	useEffect (() => {
 		console.log('componentDidUpdate');
 	});
-
-	// constructor(props) {
-	// 	super(props);
-
-	// 	onClickDone=this.onClickDone.bind(this);
-	// }
-
-
 
 	const onClickDone = id => {
 		const newItemList = items.map(item => { //проверка изменившихся элементов
