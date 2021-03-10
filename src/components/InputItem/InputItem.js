@@ -29,11 +29,6 @@ class InputItem extends React.Component {
 		}		
 	};
 
-	static getDerivedStateFromProps(props, state) {
-        console.log('getDerivedStateFromProps');
-        return null;
-    }
-
 	render() {
 
 		const { onClickAdd } = this.props;
