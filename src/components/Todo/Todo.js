@@ -39,14 +39,6 @@ const Todo = () => {
 		console.log('componentDidUpdate');
 	});
 
-	// constructor(props) {
-	// 	super(props);
-
-	// 	onClickDone=this.onClickDone.bind(this);
-	// }
-
-
-
 	const onClickDone = id => {
 		const newItemList = items.map(item => { //проверка изменившихся элементов
 			const newItem = { ...item }; //деструктуризация ItemList
