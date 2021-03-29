@@ -1,7 +1,12 @@
 .footer {
 	color: #757575;
 	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
 }
 .count {
 	color: #333;
+}
+.filter:focus {
+	text-decoration: underline;
 }

@@ -12,53 +12,56 @@ class InputItem extends React.Component {
 	};
 
 	onButtonClick = () => { //вызывает обработчик onClickAdd предварительно очистив inputValue
-
-		if (this.state.inputValue !== this.state.wrongValue) { //проверка на пустую строку
-			this.setState({  
-				inputValue: '',
-				errorText: '',
-				error: false
-			});
-
-			this.props.onClickAdd(this.state.inputValue);
-		} else {
-			this.setState({
-				errorText: 'Введите задачу',
-				error: true
-			});
-		}		
+		this.setState ({
+			inputValue: ''
+		});
+		if (this.state.inputValue === this.state.wrongValue) { //проверка на пустую строку
+			this.setState ({error: true, errorText: 'Поле не может быть пустым'});
+		}
+		else if (this.props.items.some(item => item.value === this.state.inputValue)) {
+			this.setState ({error: true, errorText: 'Данная задача была добавлена ранее'});
+		}
+		else {
+				this.setState({
+					errorText: '',
+					error: false
+				});
+				this.props.onClickAdd(this.state.inputValue);
+			};
+			
 	};
 
 	render() {
 
-		const { onClickAdd } = this.props;
+		const { onClickAdd, items } = this.props;
 
-		return (<div>
-		<TextField
-		    label="Добавить задачу"
-	        multiline
-	        rowsMax={2}
-	        fullWidth
-	        margin="normal"
-	        value={this.state.inputValue}
-	        onChange={event => this.setState({inputValue: event.target.value.toUpperCase() })}
-	        helperText={this.state.errorText}
-	        error={this.state.error}
-		   />
+		return (
+		<div>
+			<TextField
+			    label="Добавить задачу"
+		        error={this.state.error}
+		        helperText={this.state.errorText}
+		        fullWidth
+		        margin="normal"
+		        value={this.state.inputValue}
+		        onChange={event => this.setState({inputValue: event.target.value})}      
+			/>
 
-	    <Button 
-	    	variant="contained"
-	    	fullWidth
-	    	onClick={this.onButtonClick}
-	    >
-	    	Добавить
-	    </Button>
+		    <Button 
+		    	variant="contained"
+		    	fullWidth
+		    	onClick={this.onButtonClick}
+		    >
+		    	Добавить
+		    </Button>
 		</div>);
 	}
 }
 
 InputItem.propTypes = {
-	onClickAdd: PropTypes.func.isRequired
-}
+	inputValue: PropTypes.string,
+	helperText: PropTypes.string,
+	onButtonClick: PropTypes.func
+};
 
 export default InputItem;

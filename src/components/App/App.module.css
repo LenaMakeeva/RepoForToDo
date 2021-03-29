@@ -13,6 +13,10 @@ body {
 	border-radius: 5px;
 }
 
+.content {
+	width: 100%;
+}
+
 .title {
 	font-family: Impact, sans-serif;
 	color: #333;
@@ -23,13 +27,12 @@ body {
 	flex-direction: row;
   	justify-content: center;
   	align-items: center;
+  	width: 120px;
 	margin: 0;
 	border: 1px solid #fff;
 	border-radius: 3px;
-}
-
-.content {
-
+	background: url('../img/LogoWHS.svg') center bottom no-repeat;
+	background-size: 90px 50px;
 }
 
 .link {

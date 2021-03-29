@@ -4,7 +4,7 @@ import Item from '../Item/Item';
 import classnames from 'classnames'; 
 import styles from '../ItemList/ItemList.module.css';
 
-const ItemList = ({ items, onClickDone, onClickDelete }) => (<ul className={styles.lists}>
+const ItemList = ({ items, onClickDone, onClickDelete, onClickSelected}) => (<ul className={styles.lists}>
 	{items.map(item => <li key={item.value} className={styles.list}>
 		<Item
 			value={item.value}
@@ -12,12 +12,13 @@ const ItemList = ({ items, onClickDone, onClickDelete }) => (<ul className={styl
 			id={item.id}
 			onClickDone={onClickDone}
 			onClickDelete={onClickDelete}
+			onClickSelected={onClickSelected}
 		/>
 	</li>)}
 </ul>);
 
 ItemList.propTypes = {
-	items: PropTypes.arrayOf(PropTypes.object).isRequired,
+	items: PropTypes.array.isRequired,
 	onClickDone: PropTypes.func.isRequired,
 	onClickDelete: PropTypes.func.isRequired
 }

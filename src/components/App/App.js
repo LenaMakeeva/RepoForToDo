@@ -8,7 +8,6 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Todo from '../Todo/Todo';
 import About from '../About/About';
-import Contacts from '../Contacts/Contacts';
 import MenuList from '@material-ui/core/MenuList';
 
 const App = () => 
@@ -18,14 +17,12 @@ const App = () =>
 				<MenuList>
 					<Link to='/' className={styles.link}><MenuItem>Обо мне</MenuItem></Link>
 					<Link to='/Todo' className={styles.link}><MenuItem>Дела</MenuItem></Link>
-					<Link to='/Contacts' className={styles.link}><MenuItem>Контакты</MenuItem></Link>
 	      		</MenuList>
 	      	</Card>
 			<Card variant="outlined" className={styles.content}>
 	    		<CardContent>
 	    			<Route path='/' exact component={About} />
-	    			<Route path='/Todo' exact component={Todo} />
-	    			<Route path='/Contacts' exact component={Contacts} />
+	    			<Route path='/Todo' component={Todo} />
 				</CardContent>
 			</Card>
 		</div>
