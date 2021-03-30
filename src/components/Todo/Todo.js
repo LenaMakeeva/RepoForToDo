@@ -83,7 +83,7 @@ const Todo = () => {
 	return (
 		<Card variant="outlined" className={styles.cardContent}>
 				<h1 className={styles.title}>Список задач</h1>
-				<InputItem onClickAdd={onClickAdd}/>
+				<InputItem items={items} onClickAdd={onClickAdd}/>
 				<ItemList items={newItemList} onClickDone={onClickDone}	onClickDelete={onClickDelete}/>
 				<Footer filtered={filter} onClickFilter={onClickFilter}	count = {count}	countDone = {countDone}	countUndone = {countUndone}/>
 		</Card>
