@@ -108,9 +108,6 @@
 		padding-bottom: 10px;
 	}
 
-	.pagination {
-		height: 20px;
-	}
 }
 
 @media screen and (max-width: 374px) {
