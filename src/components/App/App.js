@@ -14,16 +14,14 @@ const App = () =>
 	(<Router> 
 		<div className={styles.wrap}>
 			<Card className={styles.sidebar}>
-				<MenuList>
+				<MenuList className={styles.menuList}>
 					<Link to='/' className={styles.link}><MenuItem>Обо мне</MenuItem></Link>
 					<Link to='/Todo' className={styles.link}><MenuItem>Дела</MenuItem></Link>
 	      		</MenuList>
 	      	</Card>
 			<Card variant="outlined" className={styles.content}>
-	    		<CardContent>
 	    			<Route path='/' exact component={About} />
 	    			<Route path='/Todo' component={Todo} />
-				</CardContent>
 			</Card>
 		</div>
 	</Router>);

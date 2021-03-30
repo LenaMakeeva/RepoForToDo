@@ -22,17 +22,10 @@ const Todo = () => {
 			}
 		],
 		count : 2,
-		// сountDone: 0,
-		// countUndone: 2,
-		// filteredItems: [],
-		// filter: 'all',
-		// selectedId: -1
 	};
 
 	const [items,setItems] = useState(initialState.items);
 	const [count,setCount] = useState(initialState.count);
-	// const [countDone, setCountDone] = useState(initialState.countDone);	
-	// const [countUndone, setCountUndone] = useState(initialState.countUndone);
 	const [filter, setFilter] = useState('all');
 	let newItemList;
 
@@ -88,26 +81,22 @@ const Todo = () => {
 	}
 
 	return ( 
-		<div className={styles.wrap}>
-			<Card variant="outlined" className={styles.content}>
-	    		<CardContent>
-					<h1 className={styles.title}>Список задач</h1>
-					<InputItem onClickAdd={onClickAdd}/>
-					<ItemList
-						items={newItemList}
-						onClickDone={onClickDone}
-						onClickDelete={onClickDelete}
-					/>
-					<Footer 
-						filtered={filter}
-						onClickFilter={onClickFilter}
-						count = {count}
-						countDone = {countDone}
-						countUndone = {countUndone}
-					/>
-				</CardContent>
-			</Card>
-		</div>
+		<Card variant="outlined" className={styles.cardContent}>
+				<h1 className={styles.title}>Список задач</h1>
+				<InputItem onClickAdd={onClickAdd}/>
+				<ItemList
+					items={newItemList}
+					onClickDone={onClickDone}
+					onClickDelete={onClickDelete}
+				/>
+				<Footer 
+					filtered={filter}
+					onClickFilter={onClickFilter}
+					count = {count}
+					countDone = {countDone}
+					countUndone = {countUndone}
+				/>
+		</Card>
 	);
 }
 

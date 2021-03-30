@@ -125,7 +125,7 @@ class About extends React.Component {
 					
 					<div className={styles.works}>
 						<h3 className={styles.title}>Мои работы:</h3>
-						<p className={styles.works_description}>Для перехода на хостинг нажмите на работу</p>
+						<p className={styles.works_description}>Для просмотра нажмите на работу</p>
 						<li>
 							<a 
 								href="https://lenamakeeva.github.io/WayUp/"

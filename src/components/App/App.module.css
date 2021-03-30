@@ -41,3 +41,34 @@ body {
 	color: #333;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 767px) {
+	.wrap {
+		flex-direction: column;
+		width: 365px;
+		font-size: 16px;
+	}
+
+	.sidebar {
+		width: 100%;
+		background-position: right;
+		background-size: 70px 30px;
+		margin-right: 10px;
+	}
+
+	.menuList {
+		display: flex;
+	}
+
+	.content {
+		width: 365px;
+	}
+
+	.link {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+
+}

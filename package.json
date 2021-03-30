@@ -1,5 +1,6 @@
 {
   "name": "todo",
+  "homepage": "https://webheroschool.github.io/RepoForToDo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

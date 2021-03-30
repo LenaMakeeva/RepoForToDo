@@ -93,3 +93,26 @@
 	text-align: right;
 	font-size: 10px;
 }
+
+@media screen and (max-width: 767px) {
+	.wrap {
+		font-size: 14px;
+	}
+
+	.avatar {
+		height: 100px;
+	}
+
+	.works_description {
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+
+	.pagination {
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+
+}
