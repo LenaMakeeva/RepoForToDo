@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/RepoForToDo/static/css/main.76e60552.chunk.css",
+    "main.js": "/RepoForToDo/static/js/main.59a64fc8.chunk.js",
+    "main.js.map": "/RepoForToDo/static/js/main.59a64fc8.chunk.js.map",
+    "runtime-main.js": "/RepoForToDo/static/js/runtime-main.72ed5ba9.js",
+    "runtime-main.js.map": "/RepoForToDo/static/js/runtime-main.72ed5ba9.js.map",
+    "static/js/2.eaea0abf.chunk.js": "/RepoForToDo/static/js/2.eaea0abf.chunk.js",
+    "static/js/2.eaea0abf.chunk.js.map": "/RepoForToDo/static/js/2.eaea0abf.chunk.js.map",
+    "index.html": "/RepoForToDo/index.html",
+    "static/css/main.76e60552.chunk.css.map": "/RepoForToDo/static/css/main.76e60552.chunk.css.map",
+    "static/js/2.eaea0abf.chunk.js.LICENSE.txt": "/RepoForToDo/static/js/2.eaea0abf.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/RepoForToDo/static/media/LogoWHS.e8d7a008.svg",
+    "static/media/email.792ef22f.png": "/RepoForToDo/static/media/email.792ef22f.png",
+    "static/media/github.f1102180.png": "/RepoForToDo/static/media/github.f1102180.png",
+    "static/media/instagram.e80dd0bf.png": "/RepoForToDo/static/media/instagram.e80dd0bf.png",
+    "static/media/telegram.f677c7c2.png": "/RepoForToDo/static/media/telegram.f677c7c2.png",
+    "static/media/vk.a3958c41.png": "/RepoForToDo/static/media/vk.a3958c41.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72ed5ba9.js",
+    "static/js/2.eaea0abf.chunk.js",
+    "static/css/main.76e60552.chunk.css",
+    "static/js/main.59a64fc8.chunk.js"
+  ]
+}
