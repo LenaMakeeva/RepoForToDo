@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/RepoForToDo/static/css/main.76e60552.chunk.css",
-    "main.js": "/RepoForToDo/static/js/main.59a64fc8.chunk.js",
-    "main.js.map": "/RepoForToDo/static/js/main.59a64fc8.chunk.js.map",
+    "main.js": "/RepoForToDo/static/js/main.f5bf8cdc.chunk.js",
+    "main.js.map": "/RepoForToDo/static/js/main.f5bf8cdc.chunk.js.map",
     "runtime-main.js": "/RepoForToDo/static/js/runtime-main.72ed5ba9.js",
     "runtime-main.js.map": "/RepoForToDo/static/js/runtime-main.72ed5ba9.js.map",
     "static/js/2.eaea0abf.chunk.js": "/RepoForToDo/static/js/2.eaea0abf.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.72ed5ba9.js",
     "static/js/2.eaea0abf.chunk.js",
     "static/css/main.76e60552.chunk.css",
-    "static/js/main.59a64fc8.chunk.js"
+    "static/js/main.f5bf8cdc.chunk.js"
   ]
 }
