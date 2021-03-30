@@ -78,33 +78,17 @@ const Todo = () => {
     		break;
  		default:
     		newItemList = items;
-	}
+	};
 
-	return ( 
+	return (
 		<Card variant="outlined" className={styles.cardContent}>
 				<h1 className={styles.title}>Список задач</h1>
-				<InputItem onClickAdd={onClickAdd}/>
-				<ItemList
-					items={newItemList}
-					onClickDone={onClickDone}
-					onClickDelete={onClickDelete}
-				/>
-				<Footer 
-					filtered={filter}
-					onClickFilter={onClickFilter}
-					count = {count}
-					countDone = {countDone}
-					countUndone = {countUndone}
-				/>
+				<InputItem items={items} onClickAdd={onClickAdd}/>
+				<ItemList items={newItemList} onClickDone={onClickDone}	onClickDelete={onClickDelete}/>
+				<Footer filtered={filter} onClickFilter={onClickFilter}	count = {count}	countDone = {countDone}	countUndone = {countUndone}/>
 		</Card>
-	);
+	)
+		
 }
-
-Todo.propTypes = {
-  items: PropTypes.array,
-  count: PropTypes.number,
-  countDone: PropTypes.number,
-  countUndone: PropTypes.number
-};
 
 export default Todo;

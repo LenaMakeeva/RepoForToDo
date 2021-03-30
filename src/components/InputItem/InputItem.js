@@ -18,7 +18,7 @@ class InputItem extends React.Component {
 		const isExist = item => item.value === this.state.inputValue ;
 		if (this.state.inputValue === '') { //проверка на пустую строку
 			this.setState ({error: true, errorText: 'Поле не может быть пустым'});
-		} else if (this.props.items.some(isExist)) {
+		} else if (this.props.items.find(isExist)) {
 			this.setState ({error: true, errorText: 'Данная задача была добавлена ранее'});
 		}
 		else {
